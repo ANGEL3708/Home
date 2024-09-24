@@ -1,11 +1,35 @@
 .button-container {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Espacio entre botones */
+    gap: 20px; /* Espacio entre botones */
 }
 
-a button {
-    padding: 10px 20px;
-    font-size: 16px;
+.custom-button {
+    background-color: white; /* Fondo blanco del botón */
+    border: 2px solid #ccc; /* Borde del botón */
+    padding: 10px;
+    border-radius: 5px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-button img {
+    width: 40px; /* Tamaño de la imagen */
+    height: 40px;
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+button {
+    font-size: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
