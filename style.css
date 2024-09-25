@@ -16,8 +16,8 @@
 }
 
 .custom-button img {
-    width: 10px; /* Tamaño de la imagen */
-    height: 10px;
+    width: 40px; /* Tamaño de la imagen */
+    height: 40px;
     margin-right: 10px; /* Espacio entre la imagen y el texto */
 }
 
@@ -31,5 +31,5 @@ button {
     border: none;
     cursor: pointer;
     display: flex;
-    align-items: center;
+   
 }
