@@ -1,28 +1,44 @@
+h1{
+    margin-left: 600px;
+    color: rgb(249, 117, 117);
+}
+
+
+h2{
+    margin-left: 750px;
+    margin-top: 300px;
+    font-size:40px;
+    color: white
+}
+
 .button-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 20px; /* Espacio entre botones */
+    margin-top: 60px;
 }
 
 .custom-button {
-    background-color: white; /* Fondo blanco del botón */
-    border: 2px solid #ccc; /* Borde del botón */
+
+    background-color: rgb(0, 0, 170); /* Fondo blanco del botón */
+    border: 3px solid #a600ff; /* Borde del botón */
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 40px;
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center;
+  
 }
 
 .custom-button img {
     width: 40px; /* Tamaño de la imagen */
     height: 40px;
     margin-right: 10px; /* Espacio entre la imagen y el texto */
+    border-radius: 20px;
 }
 
 a {
-    text-decoration: none; /* Elimina el subrayado del enlace */
+    text-decoration: none;
 }
 
 button {
@@ -31,5 +47,12 @@ button {
     border: none;
     cursor: pointer;
     display: flex;
-   
+    align-items: center;
 }
+
+body{
+    background-color: rgb(0, 0, 84);
+    margin: 0;
+    height: 100vh;
+}
+
