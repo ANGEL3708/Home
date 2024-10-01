@@ -91,7 +91,7 @@ html {
 
 @media (max-width: 600px) {
     .buttons {
-        flex-direction: column; /* Coloca los botones uno debajo del otro en pantallas pequeñas */
+     
         width: 100%; /* Ocupa todo el ancho disponible */
     }
 
