@@ -91,7 +91,7 @@ html {
 
 @media (max-width: 600px) {
     .buttons {
-     
+        flex-direction: column; /* Coloca los botones uno debajo del otro en pantallas pequeñas */
         width: 100%; /* Ocupa todo el ancho disponible */
     }
 
@@ -99,5 +99,31 @@ html {
         max-width: none; /* Los botones ahora pueden ocupar todo el ancho */
         width: 90%; /* Ajusta el ancho de los botones en móviles para que no ocupen todo el espacio */
         margin: 0 auto; /* Centra los botones */
+    }
+}
+
+/* Estilos para móviles (pantallas más pequeñas) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .buttons {
+        flex-direction: column; /* Coloca los botones uno debajo del otro */
+    }
+
+    .btn {
+        width: 90%; /* Los botones ocuparán el 90% del ancho en móviles */
+        max-width: none; /* Elimina cualquier límite de ancho máximo */
+        margin: 10px auto; /* Agrega 10px de margen arriba y abajo de cada botón */
     }
 }
