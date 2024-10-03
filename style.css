@@ -127,3 +127,52 @@ html {
         margin: 10px auto; /* Agrega 10px de margen arriba y abajo de cada botón */
     }
 }
+     /* Asegurar que el cuerpo ocupe toda la ventana del navegador */
+     body, html {
+        height: 100%;
+        margin: 0;
+    }
+
+    /* Estilo para el contenedor general */
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* Asegurar que el contenido principal crezca y el footer esté siempre al fondo */
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        width: 100%;
+        bottom: 0;
+        margin-top: auto;
+    }
+
+    /* Botón flotante de WhatsApp */
+    .whatsapp-button {
+        position: fixed;
+        bottom: 20px; /* Ajustado para que esté por encima del footer */
+        right: 20px;
+        background-color: #25D366;
+        color: white;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+    }
+
+    .whatsapp-button i {
+        font-size: 30px;
+    }
+
+    .whatsapp-button:hover {
+        background-color: #1ebe5b;
+    }
