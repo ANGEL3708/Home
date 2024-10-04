@@ -164,7 +164,6 @@ html {
     background-color: #1ebe5b; /* Efecto hover más oscuro */
 }
 
-/* Asegurando que el cuerpo ocupe toda la ventana */
 html, body {
     height: 100%;
     margin: 0;

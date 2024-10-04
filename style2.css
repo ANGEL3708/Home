@@ -99,7 +99,7 @@ footer {
     text-align: center;
     padding: 10px;
     position: relative;
-    width: 100%;
+    width: 97.3%;
     bottom: 0;
     margin-top: auto;
 }
@@ -143,14 +143,3 @@ footer {
     opacity: 1;
 }
 
-/* Evitar el scroll lateral */
-* {
-    box-sizing: border-box;
-}
-
-body, html {
-    overflow-x: hidden; /* Evitar scroll horizontal */
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
