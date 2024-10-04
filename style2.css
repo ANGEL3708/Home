@@ -142,3 +142,15 @@ footer {
 .enviar-whatsapp-button:hover::after {
     opacity: 1;
 }
+
+/* Evitar el scroll lateral */
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden; /* Evitar scroll horizontal */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
