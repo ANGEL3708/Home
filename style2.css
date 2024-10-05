@@ -94,13 +94,13 @@ html, body {
 
 /* Estilo del footer para que se mantenga abajo */
 footer {
-    background-color: #333;
     color: white;
     text-align: center;
     padding: 10px;
-    position: relative;
-    width: 98.7%;
+    position: absolute;
+    width: 100%;
     bottom: 0;
+    left: 0;
     margin-top: auto;
 }
 /* Estilo para el botón de "Enviar a WhatsApp" */
