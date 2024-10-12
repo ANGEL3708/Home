@@ -3,11 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Gris claro */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -55,7 +56,7 @@ input[type="text"] {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #28a745;
+    background-color: #555; /* Gris medio */
     color: white;
     border: none;
     border-radius: 4px;
@@ -64,7 +65,7 @@ button {
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #333; /* Gris oscuro */
 }
 
 /* Estilo para el botón flotante de WhatsApp */
@@ -72,7 +73,7 @@ button:hover {
     position: fixed;
     bottom: 20px; /* Ajustado para que esté por encima del footer */
     right: 20px;
-    background-color: #25D366;
+    background-color: #25D366; /* Verde de WhatsApp */
     color: white;
     border-radius: 50%;
     width: 60px;
@@ -89,7 +90,7 @@ button:hover {
 }
 
 .whatsapp-button:hover {
-    background-color: #1ebe5b; /* Efecto hover más oscuro */
+    background-color: #1ebe5b; /* Verde oscuro */
 }
 
 /* Asegurando que el cuerpo ocupe toda la ventana */
@@ -100,7 +101,7 @@ html, body {
 
 /* Estilo del footer para que se mantenga abajo */
 footer {
-    background-color: #333;
+    background-color: #333; /* Gris oscuro */
     color: white;
     text-align: center;
     padding: 10px;
@@ -109,11 +110,12 @@ footer {
     bottom: 0;
     margin-top: auto;
 }
+
 /* Estilo para el botón de "Enviar a WhatsApp" */
 .enviar-whatsapp-button {
     width: 100%;
     padding: 10px;
-    background-color: #28a745;
+    background-color: #555; /* Gris medio */
     color: white;
     border: none;
     border-radius: 4px;
@@ -123,7 +125,7 @@ footer {
 }
 
 .enviar-whatsapp-button:hover {
-    background-color: #218838;
+    background-color: #333; /* Gris oscuro */
 }
 
 /* Tooltip para el comentario flotante del botón "Enviar a WhatsApp" */
@@ -133,7 +135,7 @@ footer {
     bottom: 40px; /* Ajusta la distancia sobre el botón */
     left: 50%; /* Para centrar el tooltip */
     transform: translateX(-50%);
-    background-color: #333;
+    background-color: #333; /* Gris oscuro */
     color: white;
     padding: 5px 10px;
     border-radius: 4px;
@@ -148,4 +150,3 @@ footer {
 .enviar-whatsapp-button:hover::after {
     opacity: 1;
 }
-
