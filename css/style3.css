@@ -1,44 +1,78 @@
-/* Estilos generales */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Gris claro */
-    color: #333; /* Gris oscuro */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 10px;
     margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    height: 100vh; /* Para que el contenido ocupe toda la altura de la ventana */
+    overflow-y: auto; /* Habilita el scroll vertical */
+}
+
+/* Barra de navegación fija */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed; /* La barra se queda fija en la parte superior */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que la barra esté por encima del contenido */
+}
+
+.nav-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline;
+}
+
+.btn-invitado {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-invitado:hover {
+    background-color: #45a049;
+}
+
+/* Estilo del formulario */
+form {
+    background-color: white;
+    padding: 30px; /* Aumenta el padding para dar más espacio interno */
+    margin: 100px auto; /* Centra el formulario horizontalmente y ajusta el margen superior para la barra */
+    max-width: 500px; /* Ajusta el ancho máximo del formulario */
+    width: 100%; /* Asegúrate de que ocupe todo el ancho disponible */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 h2 {
-    color: #333; /* Gris oscuro */
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-}
-
-form {
-    background-color: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
+    text-align: center;
+    color: #333;
     margin-bottom: 20px;
 }
 
 label {
     display: block;
-    margin-bottom: 0.5px;
+    margin-bottom: 10px;
+    color: #333;
     font-weight: bold;
-    font-size: 0.9rem;
 }
 
 input[type="text"],
@@ -48,63 +82,36 @@ input[type="password"],
 input[type="date"],
 select {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #f4f4f4; /* Gris claro */
-    color: #333; /* Gris oscuro */
-    font-size: 0.9rem;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
 input[type="submit"] {
-    background-color: #007bff;
+    background-color: #4CAF50;
     color: white;
     border: none;
     padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 4px;
     cursor: pointer;
-    width: 100%;
-    transition: background-color 0.5s ease; /* Transición suave */
+    font-size: 16px;
+    width: 100%; /* El botón ocupa el 100% del ancho */
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 input[type="submit"]:hover {
-    background-color: #00ff0d;
+    background-color: #45a049;
 }
 
-
-
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
-@media (max-width: 600px) {
-    h2 {
-        font-size: 1.3rem;
-        margin-bottom: 6px;
+/* Responsive design para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    .nav-container {
+        justify-content: center;
     }
 
     form {
-        padding: 10px;
-        max-width: 95%; 
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    input[type="password"],
-    input[type="date"],
-    select {
-        padding: 7px;
-        font-size: 0.85rem;
-    }
-
-    input[type="submit"] {
-        padding: 8px;
-        font-size: 0.9rem;
+        width: 90%; /* El formulario ocupa el 90% del ancho de la pantalla */
     }
 }
-
-
