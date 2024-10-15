@@ -52,18 +52,19 @@ input[type="password"] {
 }
 
 input[type="submit"] {
-    background-color: #25D366; /* Verde de WhatsApp */
+    background-color: #007bff;
     color: white;
     border: none;
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 1rem;
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
+    transition: background-color 0.5s ease; /* Transición suave */
 }
 
 input[type="submit"]:hover {
-    background-color: #1ebe5b; /* Verde oscuro */
+    background-color: #00ff0d;
 }
 
 /* Asegurar que el cuerpo ocupe toda la ventana */

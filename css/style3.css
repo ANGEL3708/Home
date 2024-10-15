@@ -36,7 +36,7 @@ form {
 
 label {
     display: block;
-    margin-bottom: 6px;
+    margin-bottom: 0.5px;
     font-weight: bold;
     font-size: 0.9rem;
 }
@@ -58,7 +58,7 @@ select {
 }
 
 input[type="submit"] {
-    background-color: #25D366; /* Verde de WhatsApp */
+    background-color: #007bff;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -66,28 +66,29 @@ input[type="submit"] {
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
+    transition: background-color 0.5s ease; /* Transición suave */
 }
 
 input[type="submit"]:hover {
-    background-color: #1ebe5b; /* Verde oscuro */
+    background-color: #00ff0d;
 }
 
-/* Asegurar que el cuerpo ocupe toda la ventana */
+
+
 html, body {
     height: 100%;
     margin: 0;
 }
 
-/* Ajustes para pantallas pequeñas (móviles) */
 @media (max-width: 600px) {
     h2 {
         font-size: 1.3rem;
-        margin-bottom: 8px;
+        margin-bottom: 6px;
     }
 
     form {
         padding: 10px;
-        max-width: 95%; /* Ocupa casi todo el ancho de la pantalla */
+        max-width: 95%; 
     }
 
     input[type="text"],
@@ -105,3 +106,5 @@ html, body {
         font-size: 0.9rem;
     }
 }
+
+
