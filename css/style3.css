@@ -35,8 +35,8 @@ nav {
     display: inline;
 }
 
-.btn-invitado {
-    background-color: #4CAF50;
+.btn-login {
+    background-color: #0054fd;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -102,7 +102,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #0059ff;
 }
 
 /* Responsive design para pantallas pequeñas */
