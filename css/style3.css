@@ -46,8 +46,8 @@ nav {
     transition: background-color 0.3s;
 }
 
-.btn-invitado:hover {
-    background-color: #45a049;
+.btn-login:hover {
+    background-color: #00ff0d;
 }
 
 /* Estilo del formulario */
@@ -90,7 +90,7 @@ select {
 }
 
 input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #0054fd;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -102,7 +102,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #0059ff;
+    background-color: #00ff0d;
 }
 
 /* Responsive design para pantallas pequeñas */
