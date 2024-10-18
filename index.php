@@ -10,7 +10,13 @@
 </head>
 <body>
     <header>
-        <h1>Mi Portafolio</h1>
+        <div class="logo">
+            <img src="fotos/logo_of.png">
+        </div>
+        <div class="auth-buttons">
+            <a href="login.html" class="btn-login">Login</a>
+            <a href="register.html" class="btn-register">Register</a>
+        </div>
     </header>
     
     <section class="about-me">
@@ -41,13 +47,15 @@
             <a href="https://www.linkedin.com/in/angel-cano-ortiz-undefined-66330826b/" target="_blank" class="btn">
                 <i class="fab fa-linkedin"></i> LinkedIn
             </a>
-        </a>
-        <section class="local-link">
-            <h2>Mira mis servicios</h2>
-            <div class="buttons">
-                <a href="servicios.html" class="btn">
-                    <i class="fas fa-folder-open"></i> Mis Servicios
-                </a>
+        </div>
+    </section>
+
+    <section class="local-link">
+        <h2>Mira mis servicios</h2>
+        <div class="buttons">
+            <a href="servicios.html" class="btn">
+                <i class="fas fa-folder-open"></i> Mis Servicios
+            </a>
         </div>
     </section>
     
