@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-   
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/style2.css">
-    <title>servicios</title>
-</head>
-<body>
-    <div class="container">
+<div class="container">
         <h1>Servicios Disponibles</h1>
 
         <form id="form-servicios">
@@ -85,11 +74,5 @@
     <a href="https://wa.me/573135913108?text=Hola!%20Quiero%20comunicarme%20contigo" target="_blank" class="whatsapp-button">
         <i class="fab fa-whatsapp"></i>
     </a>
-
-    <footer>
-        <p>&copy; 2024 Angel Esteban Cano Ortiz - Todos los derechos reservados</p>
-    </footer>
-
-    <script src="js/script2.js"></script>
-</body>
-</html>
+    
+    <script src="js/script.js"></script>

@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
-    <link rel="stylesheet" href="css/style3.css">
+        <link rel="stylesheet" type="text/css" href="css/style3.css"> 
+        <link rel="icon" href="fotos/logo_of.png" type="image/png">
 
-</head>
+    </head>
 <body>
  
      <nav>
         <div class="nav-container">
             <ul class="nav-list">
-                <li><button onclick="window.location.href='index.html'" class="btn-login">Menu</button></li>
+                <li><button onclick="window.location.href='index.php'" class="btn-login">Menu</button></li>
             </ul>
         </div>
     </nav>
 
     <h2>Registro</h2>
-    <form action="procesar_registro.php" method="POST">
+    <form action="prosesos/procesar_registro.php" method="POST">
         <!-- Nombre -->
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required><br><br>
@@ -53,5 +54,9 @@
         <input type="submit" value="Registrar">
     </form>
     
+    <footer>
+    <p>&copy; 2024 Angel Esteban Cano Ortiz - Todos los derechos reservados</p>
+</footer>
+
 </body>
 </html>

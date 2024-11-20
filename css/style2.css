@@ -4,16 +4,54 @@
     box-sizing: border-box;
 }
 
-/* Estilos generales */
+
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: #f4f4f4; /* Gris claro */
+    background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
     overflow-x: hidden; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.auth-buttons a:hover {
+    background-color: #0056b3;
+}
+.logo {
+    display: flex;
+    height: 75px;
+    align-items: center;
+}
+
+.logo img {
+    height:95px; 
+    width: auto;
+    margin-right: 5px;
 }
 
 .container {
@@ -56,7 +94,7 @@ input[type="text"] {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #555; /* Gris medio */
+    background-color: #555; 
     color: white;
     border: none;
     border-radius: 4px;
@@ -65,15 +103,15 @@ button {
 }
 
 button:hover {
-    background-color: #333; /* Gris oscuro */
+    background-color: #333; 
 }
 
-/* Estilo para el botón flotante de WhatsApp */
+
 .whatsapp-button {
     position: fixed;
-    bottom: 20px; /* Ajustado para que esté por encima del footer */
+    bottom: 20px; 
     right: 20px;
-    background-color: #25D366; /* Verde de WhatsApp */
+    background-color: #25D366; 
     color: white;
     border-radius: 50%;
     width: 60px;
@@ -82,7 +120,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    z-index: 1000; /* Para que el botón esté siempre visible */
+    z-index: 1000; 
 }
 
 .whatsapp-button i {
@@ -90,18 +128,17 @@ button:hover {
 }
 
 .whatsapp-button:hover {
-    background-color: #1ebe5b; /* Verde oscuro */
-}
+    background-color: #1ebe5b;
+ }
 
-/* Asegurando que el cuerpo ocupe toda la ventana */
 html, body {
     height: 100%;
     margin: 0;
 }
 
-/* Estilo del footer para que se mantenga abajo */
+
 footer {
-    background-color: #333; /* Gris oscuro */
+    background-color: #333; 
     color: white;
     text-align: center;
     padding: 10px;
@@ -111,11 +148,10 @@ footer {
     margin-top: auto;
 }
 
-/* Estilo para el botón de "Enviar a WhatsApp" */
 .enviar-whatsapp-button {
     width: 100%;
     padding: 10px;
-    background-color: #555; /* Gris medio */
+    background-color: #555; 
     color: white;
     border: none;
     border-radius: 4px;
@@ -125,17 +161,17 @@ footer {
 }
 
 .enviar-whatsapp-button:hover {
-    background-color: #333; /* Gris oscuro */
+    background-color: #333; 
 }
 
-/* Tooltip para el comentario flotante del botón "Enviar a WhatsApp" */
+
 .enviar-whatsapp-button::after {
     content: attr(data-tooltip);
     position: absolute;
-    bottom: 40px; /* Ajusta la distancia sobre el botón */
-    left: 50%; /* Para centrar el tooltip */
+    bottom: 40px; 
+    left: 50%; 
     transform: translateX(-50%);
-    background-color: #333; /* Gris oscuro */
+    background-color: #333;
     color: white;
     padding: 5px 10px;
     border-radius: 4px;
@@ -146,7 +182,6 @@ footer {
     transition: opacity 0.3s ease-in-out;
 }
 
-/* Mostrar el tooltip al pasar el mouse */
 .enviar-whatsapp-button:hover::after {
     opacity: 1;
 }

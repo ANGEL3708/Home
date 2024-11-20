@@ -1,22 +1,20 @@
-/* General */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    height: 100vh; /* Para que el contenido ocupe toda la altura de la ventana */
-    overflow-y: auto; /* Habilita el scroll vertical */
+    height: 100vh;
+    overflow-y: auto;
 }
 
-/* Barra de navegación fija */
 nav {
     background-color: #333;
     color: white;
     padding: 10px 0;
-    position: fixed; /* La barra se queda fija en la parte superior */
+    position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Asegura que la barra esté por encima del contenido */
+    z-index: 1000;
 }
 
 .nav-container {
@@ -46,17 +44,12 @@ nav {
     transition: background-color 0.3s;
 }
 
-.btn-login:hover {
-    background-color: #00ff0d;
-}
-
-/* Estilo del formulario */
 form {
     background-color: white;
-    padding: 30px; /* Aumenta el padding para dar más espacio interno */
-    margin: 100px auto; /* Centra el formulario horizontalmente y ajusta el margen superior para la barra */
-    max-width: 500px; /* Ajusta el ancho máximo del formulario */
-    width: 100%; /* Asegúrate de que ocupe todo el ancho disponible */
+    padding: 30px;
+    margin: 100px auto;
+    max-width: 500px;
+    width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -96,22 +89,16 @@ input[type="submit"] {
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
-    width: 100%; /* El botón ocupa el 100% del ancho */
+    width: 100%;
     border-radius: 5px;
-    transition: background-color 0.3s;
 }
 
-input[type="submit"]:hover {
-    background-color: #00ff0d;
-}
-
-/* Responsive design para pantallas pequeñas */
 @media screen and (max-width: 600px) {
     .nav-container {
         justify-content: center;
     }
 
     form {
-        width: 90%; /* El formulario ocupa el 90% del ancho de la pantalla */
+        width: 90%;
     }
 }

@@ -1,4 +1,3 @@
-/* Estilos globales */
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +15,6 @@ body {
     justify-content: space-between;
 }
 
-/* Estilo del encabezado */
 header {
     display: flex;
     justify-content: space-between;
@@ -31,8 +29,15 @@ header {
     align-items: center;
 }
 
+.brand-name {
+    margin-left: 10px;
+    font-size: 24px; 
+    font-weight: bold;
+}
+
+
 .logo img {
-    height:75px; /* Ajusta el tamaño según sea necesario */
+    height:95px; 
     width: auto;
     margin-right: 5px;
 }
@@ -59,7 +64,7 @@ h1 {
     font-size: 2.5rem;
 }
 
-/* Sección sobre mí */
+
 .about-me {
     display: flex;
     flex-direction: column;
@@ -88,12 +93,12 @@ h1 {
 
 .local-link {
     margin-top: 30px;
-    text-align: center; /* Asegura que todo el contenido de esta sección esté centrado */
+    text-align: center; 
 }
 
 .buttons {
     margin: 20px 0;
-    text-align: center; /* Centra los botones dentro de la sección */
+    text-align: center; 
 }
 
 .btn {
@@ -112,29 +117,17 @@ h1 {
     background-color: #555;
 }
 
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    margin-top: auto;
-}
 
-/* Iconos en los botones */
+
 .btn i {
-    margin-right: 10px; /* Espacio entre el icono y el texto */
+    margin-right: 10px; 
 }
 
-/* Efecto de desplazamiento suave */
+
 html {
-    scroll-behavior: smooth; /* Habilita el desplazamiento suave */
+    scroll-behavior: smooth; 
 }
 
-/* Estilos responsivos para móviles */
 @media (max-width: 600px) {
     h1 {
         font-size: 2rem;
@@ -150,20 +143,19 @@ html {
     }
 
     .buttons {
-        flex-direction: column; /* Coloca los botones uno debajo del otro */
+        flex-direction: column; 
     }
 
     .btn {
-        width: 90%; /* Los botones ocuparán el 90% del ancho en móviles */
-        max-width: none; /* Elimina cualquier límite de ancho máximo */
-        margin: 10px auto; /* Agrega 10px de margen arriba y abajo de cada botón */
+        width: 90%; 
+        max-width: none; 
+        margin: 10px auto; 
     }
 }
 
-/* Estilo para el botón flotante de WhatsApp */
 .whatsapp-button {
     position: fixed;
-    bottom: 20px; /* Ajustado para que esté por encima del footer */
+    bottom: 20px; 
     right: 20px;
     background-color: #25D366;
     color: white;
@@ -174,18 +166,17 @@ html {
     justify-content: center;
     align-items: center;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    z-index: 1000; /* Para que el botón esté siempre visible */
-}
+    z-index: 1000; 
+ }
 
 .whatsapp-button i {
     font-size: 30px;
 }
 
 .whatsapp-button:hover {
-    background-color: #1ebe5b; /* Efecto hover más oscuro */
+    background-color: #1ebe5b; 
 }
 
-/* Asegurar que el cuerpo ocupe toda la ventana del navegador */
 html, body {
     height: 100%;
     margin: 0;
@@ -197,7 +188,7 @@ body {
     justify-content: space-between;
 }
 
-/* Estilo del footer para que se mantenga abajo */
+
 footer {
     background-color: #333;
     color: white;
@@ -207,4 +198,4 @@ footer {
     width: 100%;
     bottom: 0;
     margin-top: auto;
-}
+ }
